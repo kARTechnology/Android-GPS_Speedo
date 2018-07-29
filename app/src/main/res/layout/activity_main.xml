@@ -1,0 +1,38 @@
+
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_gravity="center"
+android:background="@android:color/background_light"
+    android:screenOrientation="landscape"
+    android:configChanges="orientation|keyboardHidden"
+    tools:context="karthi.speedogps.MainActivity"
+
+
+
+    >
+
+    <com.github.anastr.speedviewlib.ProgressiveGauge
+        android:id="@+id/gauge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom"
+        app:sv_speedTextSize="220dp"
+        app:sv_unitTextSize="20dp"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="348dp"
+        android:layout_height="match_parent"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+</FrameLayout>
